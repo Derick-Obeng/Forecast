@@ -26,45 +26,10 @@ Before running the project, ensure you have the following installed:
 
 ---
 
-### Installation
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/DerrickObeng/weather-api.git
-   cd weather-api
-   ```
 
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
 
-3. Create a `.env` file in the project root and add the following variables:
-   ```env
-   VISUAL_CROSSING_API_KEY=your_visual_crossing_api_key
-   REDIS_URL=redis://localhost:6379
-   ```
 
----
-
-### Usage
-
-1. Start your Redis server:
-   ```bash
-   redis-server
-   ```
-
-2. Run the application:
-   ```bash
-   node index.js
-   ```
-
-3. Access the weather API at:
-   ```
-   http://localhost:3000/weather/{cityCode}
-   ```
-
----
 
 ### Endpoints
 
