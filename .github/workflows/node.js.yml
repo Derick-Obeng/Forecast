@@ -4,28 +4,52 @@
 name: Node.js CI
 
 on:
-  push:
+  step if the lock file is not found. Here's an updated version of your `.github/workflows/node.js.yml push:
     branches: [ "main" ]
   pull_request:
-    branches: [ "main" ]
+    branches`:
+
+```yaml
+name: Node.js CI
+
+on:
+  push:
+    branches: [ "main": [ "main" ]
 
 jobs:
   build:
+    runs-on: ubuntu-l ]
+  pull_request:
+    branches: [ "atest
 
+    strategy:
+      matrix:
+        nodemain" ]
+
+jobs:
+  build:
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
-        node-version: [18.x, 20.x, 22.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+        node-version:-version: [18.x, 20.x, 22.x]
 
     steps:
     - uses: actions/checkout@v4
+    - name: Use Node.js ${{ [18.x, 20.x, 22.x]
+
+    steps:
+    - uses: actions/checkout matrix.node-version }}
+      uses: actions/setup-node@v@v4
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v4
       with:
         node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - run: npm ci
-    - run: npm run build --if-present
+       4
+      with:
+        node-version: ${{ matrix.node-version cache: 'npm'
+    - run: npm ci || npm install
+    }}
+        cache: npm
+    - run: npm ci - run: npm run build --if-present
     - run: npm test
