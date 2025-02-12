@@ -20,7 +20,7 @@ This project is a simple Weather API built with **Node.js**, **Express**, and **
 ### Prerequisites
 
 Before running the project, ensure you have the following installed:
-
+ 
 - [Node.js](https://nodejs.org/) (v14 or higher)
 - [Redis](https://redis.io/)
 
