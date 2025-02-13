@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 
-app.get("/weather/:cityCode", (req, res) => {
+app.get("/weather/:London", (req, res) => {
     const cityCode = req.params.cityCode;
     res.json({
         city: cityCode,
@@ -10,7 +10,7 @@ app.get("/weather/:cityCode", (req, res) => {
     });
 });
 
-const PORT = 3001;
+const PORT = 3000;
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
